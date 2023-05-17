@@ -1,0 +1,20 @@
+<div class="container mt-3">
+  <h1 class="mx-auto d-flex justify-content-center">Amshy</h1>
+  <form [ngClass]="wasValidated ? 'was-validated' : ''">
+    <div class="mb-3 mt-3">
+      <label for="username" class="form-label">Username:</label>
+      <input type="text" class="form-control" id="username" placeholder="Enter username" name="username" (keyup)="handleUsernameKeyUp($event)" [value]="username" required />
+      <div class="invalid-feedback">Incorrect username.</div>
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">Password:</label>
+      <input type="password" class="form-control" id="password" placeholder="Enter password" name="password" (keyup)="handlePasswordKeyUp($event)" [value]="password" required />
+      <div class="invalid-feedback">Incorrect password.</div>
+    </div>
+    <div class="form-check mb-3">
+      <label for="remember" class="form-label">Remember me </label>
+      <input class="form-check-input" type="checkbox" id="remember" name="remember" />
+    </div>
+    <button type="button" class="btn btn-primary" (click)="handleSignInClicked()">Sign In</button>
+  </form>
+  </div>
