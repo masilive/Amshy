@@ -12,6 +12,7 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ChartComponent } from './chart/chart.component';
 import { SignInComponent } from './sign-in/sign-in.component';
+import { CandlestickComponent } from './candlestick/candlestick.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { SignInComponent } from './sign-in/sign-in.component';
     CounterComponent,
     FetchDataComponent,
     ChartComponent,
-    SignInComponent
+    SignInComponent,
+    CandlestickComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
