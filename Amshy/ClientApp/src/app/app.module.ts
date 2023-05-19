@@ -29,11 +29,11 @@ import { SignInComponent } from './sign-in/sign-in.component';
     FormsModule,
     RouterModule.forRoot([
       { path: '', redirectTo: '/sign-in', pathMatch: 'full' },
-      { path: '**', redirectTo: '/sign-in', pathMatch: 'full' },
       { path: 'sign-in', component: SignInComponent },
       { path: 'chart', component: ChartComponent },
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
+      { path: '**', redirectTo: '/sign-in', pathMatch: 'full' },
     ]),
     NgbModule
   ],
