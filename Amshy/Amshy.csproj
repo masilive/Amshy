@@ -24,10 +24,14 @@
 
   <ItemGroup>
     <None Remove="ClientApp\src\app\models\candlestick.ts" />
+    <None Remove="ClientApp\src\app\models\chartData.ts" />
+    <None Remove="ClientApp\src\app\models\riskRewardRatio.ts" />
   </ItemGroup>
 
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\src\app\models\candlestick.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\models\chartData.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\models\riskRewardRatio.ts" />
   </ItemGroup>
 
     <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
